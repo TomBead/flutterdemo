@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterdemo/dartSample/DartSample.dart';
 
 import 'FMRouteManager.dart';
 import 'Widgets/BaseWidget/BaseWidgetList.dart';
@@ -6,10 +7,61 @@ import 'Widgets/Cupertino/cupertino_vc.dart';
 import 'Widgets/Layout/layout.dart';
 import 'Widgets/Material_components/material_components_vc.dart';
 import 'Widgets/OtherWidget/OtherWidgetList.dart';
+import 'dartSample/FactoryClass.dart';
+import 'dartSample/StaticClass.dart';
 
 //启动入口,
 void main() {
   runApp(MyApp());
+  //调用
+  DartSample dartSample = DartSample();
+  dartSample.testVarFinal();
+  //单例
+  FactoryClass cd = FactoryClass();
+
+  //静态变量直接赋值
+  StaticClass.name = "name";
+  var s;
+  s = StaticClass();
+  print(StaticClass.name);
+  s = null;
+  print(s?.sum(10));
+
+  //
+  var s1 = Object();
+  s1 = StaticClass();
+  // as 不报错
+  // print((s as StaticClass).sum(10));
+  //is判断类型
+  if (s is StaticClass) {
+    print(s.sum(10));
+  }
+
+  Student stu = Student();
+  stu.name = "reno";
+  stu.run();
+  stu.setHight(181);
+  stu.study();
+  print(stu.isRight);
+  //多态
+  Person stu2 = Student();
+  if (stu2 is Student) {
+    stu2.name = "reno";
+    stu2.run();
+    stu2.setHight(181);
+    stu2.study();
+    print(stu2.isRight);
+  }
+
+  //抽象类实例化
+  AbatractClass ab =  SubClass();
+  ab.sum(10, 20);
+
+  //继承接口实现方法
+  SubClass2 clz2 =  SubClass2();
+  clz2.sum(10, 20);
+  clz2.sub(20, 5);
+  clz2.add(20, 20);
 }
 
 class MyApp extends StatelessWidget {
