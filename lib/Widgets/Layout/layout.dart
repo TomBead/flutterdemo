@@ -26,7 +26,8 @@ class FMLayoutState extends State<FMLayoutVC> {
     // 多个子元素布局
     funcLists.add({"name": "Row", "action": "/Layout/Row", "desc": "在水平方向上排列子widget的列表。"});
     funcLists.add({"name": "Column", "action": "/Layout/Column", "desc": "在垂直方向上排列子widget的列表。"});
-    funcLists.add({"name": "Flow", "action": "/Layout/Flow", "desc": "一个实现流式布局算法的widget "});
+    funcLists.add({"name": "Wrap", "action": "/Layout/Wrap", "desc": "一个实现流式布局算法的widget "});
+    funcLists.add({"name": "Flow", "action": "/Layout/Flow", "desc": "一个实现流式布局算法的widget需要计算，使用有些复杂 "});
 
     funcLists.add(
         {"name": "Padding", "action": "/Layout/Padding", "desc": "一个widget, 会给其子widget添加指定的填充 "});

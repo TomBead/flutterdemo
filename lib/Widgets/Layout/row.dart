@@ -21,6 +21,9 @@ class FMRowVC extends StatelessWidget {
     );
   }
 
+  /*
+   * 距离超出屏幕会报错
+   */
   Row _row(){
     return Row(
       //靠左或者靠右排列，分散对齐

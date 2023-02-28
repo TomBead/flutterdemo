@@ -5,9 +5,12 @@
 import 'package:flutterdemo/Widgets/Layout/center.dart';
 import 'package:flutterdemo/Widgets/Layout/padding.dart';
 
+import 'Widgets/BaseWidget/GridView.dart';
 import 'Widgets/Layout/Align.dart';
 import 'Widgets/Layout/column.dart';
 import 'Widgets/Layout/container.dart';
+import 'Widgets/Layout/flow.dart';
+import 'Widgets/Layout/wrap.dart';
 import 'Widgets/OtherWidget/icon.dart';
 import 'Widgets/BaseWidget/image.dart';
 import 'Widgets/Layout/row.dart';
@@ -44,6 +47,7 @@ import 'Widgets/OtherWidget/floatingActionButton.dart';
 import 'Widgets/Material_components/appbar.dart';
 import 'Widgets/OtherWidget/bottomnavigationbar.dart';
 import 'Widgets/OtherWidget/drawer.dart';
+import 'Widgets/other/RouteTest.dart';
 import 'Widgets/other/focusnode.dart';
 import 'Widgets/OtherWidget/iconbutton.dart';
 import 'Widgets/BaseWidget/progress.dart';
@@ -84,6 +88,7 @@ class FMRouteManager {
     _routeMap.addAll(mapForMaterialComponents());
     _routeMap.addAll(mapForCupertino());
     _routeMap.addAll(mapForLayout());
+    _routeMap.addAll(mapForOther());
   }
 
   // 自定义路由
@@ -141,6 +146,7 @@ class FMRouteManager {
       "widget/Icon": (BuildContext context) => FMIconVC(),
       "widget/TextField": (BuildContext context) => FMTextFieldVC(),
       "widget/Listview": (BuildContext context) => FMListTileVC(),
+      "widget/GridView": (BuildContext context) => InfiniteGridView(),
       "widget/Progress": (BuildContext context) => FMProgress(),
     };
   }
@@ -208,6 +214,15 @@ class FMRouteManager {
       "/Layout/Center": (BuildContext context) => CenterWidget(),
       "/Layout/Padding": (BuildContext context) => PaddingWidget(),
       "/Layout/Align": (BuildContext context) => AlignWidget(),
+      "/Layout/Wrap": (BuildContext context) => WrapTest(),
+      "/Layout/Flow": (BuildContext context) => FlowTest(),
+    };
+  }
+
+  // Widgets.Layout
+  Map<String, WidgetBuilder> mapForOther() {
+    return {
+      "/other/route": (BuildContext context) => FristPage(),
     };
   }
 }

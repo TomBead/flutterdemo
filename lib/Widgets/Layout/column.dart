@@ -21,7 +21,10 @@ class FMColumnVC extends StatelessWidget {
     );
   }
 
-  Column _column(){
+  /*
+   * 距离超出屏幕会报错
+   */
+  Column _column() {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.end,
@@ -31,19 +34,28 @@ class FMColumnVC extends StatelessWidget {
           width: 80,
           height: 80,
           color: Colors.orange,
-          child: Text("测试", style: TextStyle(fontSize: 10),),
+          child: Text(
+            "测试",
+            style: TextStyle(fontSize: 10),
+          ),
         ),
         Container(
           width: 80,
           height: 80,
           color: Colors.red,
-          child: Text("测试", style: TextStyle(fontSize: 20),),
+          child: Text(
+            "测试",
+            style: TextStyle(fontSize: 20),
+          ),
         ),
         Container(
           width: 80,
           height: 80,
           color: Colors.cyan,
-          child: Text("测试", style: TextStyle(fontSize: 30),),
+          child: Text(
+            "测试",
+            style: TextStyle(fontSize: 30),
+          ),
         )
       ],
     );

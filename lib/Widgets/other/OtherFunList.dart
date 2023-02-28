@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class FMBaseWidgetVC extends StatefulWidget {
+class OtherFunList extends StatefulWidget {
   final func;
 
-  const FMBaseWidgetVC({super.key, @required this.func});
+  const OtherFunList({super.key, @required this.func});
 
   @override
-  FMBaseWidgetState createState() => FMBaseWidgetState();
+  OtherFunListState createState() => OtherFunListState();
 }
 
-class FMBaseWidgetState extends State<FMBaseWidgetVC> {
+class OtherFunListState extends State<OtherFunList> {
   var funcLists = [];
 
   void initState() {
@@ -19,22 +19,7 @@ class FMBaseWidgetState extends State<FMBaseWidgetVC> {
   }
 
   void initData() {
-    funcLists.add({"name": "Text", "action": "widget/Text", "desc": "显示文本"});
-    funcLists.add({"name": "Image", "action": "widget/Image", "desc": "显示图片的widget。"});
-    //按钮
-    funcLists.add({"name": "Button", "action": "widget/Button", "desc": "3种常用按钮"});
-    //输入框
-    funcLists.add({"name": "TextField", "action": "widget/TextField", "desc": "输入框"});
-    //开关
-    funcLists.add({"name": "Switch", "action": "widget/Switch", "desc": "Material Design风格 开关按钮。"});
-    //勾选框
-    funcLists.add({"name": "CheckBox", "action": "widget/CheckBox", "desc": "复选框，允许用户从一组中选择多个选项。"});
-    //列表
-    funcLists.add({"name": "Listview", "action": "widget/Listview", "desc": "列表类似listview"});
-    //grid view
-    funcLists.add({"name": "GridView", "action": "widget/GridView", "desc": "网格列表"});
-    //进度条
-    funcLists.add({"name": "Progress", "action": "widget/Progress", "desc": "进度条和加载中显示"});
+    funcLists.add({"name": "路由", "action": "/other/route", "desc": "路由功能 "});
 
     setState(() {});
   }
