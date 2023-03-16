@@ -10,6 +10,7 @@ import 'Widgets/OtherWidget/OtherWidgetList.dart';
 import 'Widgets/other/OtherFunList.dart';
 import 'Widgets/other/RouteTest.dart';
 import 'dartSample/FactoryClass.dart';
+import 'dartSample/SingletonClass.dart';
 import 'dartSample/StaticClass.dart';
 
 //启动入口,
@@ -19,7 +20,8 @@ void main() {
   DartSample dartSample = DartSample();
   dartSample.testVarFinal();
   //单例
-  FactoryClass cd = FactoryClass();
+  SingletonClass sl = SingletonClass();
+  sl.doWork();
 
   //静态变量直接赋值
   StaticClass.name = "name";

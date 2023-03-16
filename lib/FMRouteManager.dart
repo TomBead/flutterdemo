@@ -11,6 +11,7 @@ import 'Widgets/Layout/column.dart';
 import 'Widgets/Layout/container.dart';
 import 'Widgets/Layout/flow.dart';
 import 'Widgets/Layout/wrap.dart';
+import 'Widgets/OtherWidget/CustomScrollView.dart';
 import 'Widgets/OtherWidget/icon.dart';
 import 'Widgets/BaseWidget/image.dart';
 import 'Widgets/Layout/row.dart';
@@ -47,7 +48,10 @@ import 'Widgets/OtherWidget/floatingActionButton.dart';
 import 'Widgets/Material_components/appbar.dart';
 import 'Widgets/OtherWidget/bottomnavigationbar.dart';
 import 'Widgets/OtherWidget/drawer.dart';
+import 'Widgets/other/FileDemo.dart';
 import 'Widgets/other/RouteTest.dart';
+import 'Widgets/other/ThemeTestRoute.dart';
+import 'Widgets/other/WillPopScopeTestRoute.dart';
 import 'Widgets/other/focusnode.dart';
 import 'Widgets/OtherWidget/iconbutton.dart';
 import 'Widgets/BaseWidget/progress.dart';
@@ -179,6 +183,7 @@ class FMRouteManager {
       "/MaterialComponents/Card": (BuildContext context) => FMCardVC(),
       "/MaterialComponents/Stepper": (BuildContext context) => FMStepperVC(),
       "/MaterialComponents/Divider": (BuildContext context) => FMDividerVC(),
+      "/MaterialComponents/CustomScrollViewTest": (BuildContext context) => CustomScrollViewTest(),
     };
   }
 
@@ -223,6 +228,9 @@ class FMRouteManager {
   Map<String, WidgetBuilder> mapForOther() {
     return {
       "/other/route": (BuildContext context) => FristPage(),
+      "/other/willpop": (BuildContext context) => WillPopScopeTestRoute(),
+      "/other/ThemeTestRoute": (BuildContext context) => ThemeTestRoute(),
+      "/other/file": (BuildContext context) => FileDemo(),
     };
   }
 }

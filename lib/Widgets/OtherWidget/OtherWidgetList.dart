@@ -25,6 +25,11 @@ class OtherWidgetState extends State<OtherWidgetVC> {
       "action": "/MaterialComponents/IconButton",
       "desc": "Material Design  。"
     });
+    funcLists.add({
+      "name": "CustomScrollViewTest 滚动view容器",
+      "action": "/MaterialComponents/CustomScrollViewTest",
+      "desc": "可以装下 listview和gridview的容器"
+    });
 
     funcLists.add({
       "name": "Appbar",

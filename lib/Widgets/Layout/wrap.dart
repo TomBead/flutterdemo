@@ -7,7 +7,7 @@ class WrapTest extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           title: Text(
-            "Column",
+            "WrapTest",
           ),
           backgroundColor: Colors.lightBlue,
         ),
@@ -21,7 +21,7 @@ class WrapTest extends StatelessWidget {
 
   Wrap _Wrap() {
     return Wrap(
-      spacing: 8.0, // 主轴(水平)方向间距
+      spacing: 16, // 主轴(水平)方向间距
       runSpacing: 4.0, // 纵轴（垂直）方向间距
       alignment: WrapAlignment.center, //沿主轴方向居中
       children: <Widget>[

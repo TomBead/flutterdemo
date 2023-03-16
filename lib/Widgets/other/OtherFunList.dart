@@ -20,7 +20,12 @@ class OtherFunListState extends State<OtherFunList> {
 
   void initData() {
     funcLists.add({"name": "路由", "action": "/other/route", "desc": "路由功能 "});
+    funcLists.add({"name": "切换主题", "action": "/other/ThemeTestRoute", "desc": "切换主题 "});
 
+    funcLists.add({"name": "文件操作", "action": "/other/file", "desc": "文件操作 "});
+
+    //不起作用？
+    // funcLists.add({"name": "导航栏拦截", "action": "/other/willpop", "desc": "按两次返回键退出"});
     setState(() {});
   }
 

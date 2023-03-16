@@ -3,17 +3,6 @@
 //来源：稀土掘金
 //著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
-class FactoryClass {
-  //保存单例
-  static final FactoryClass _instance = FactoryClass._init();
-
-  //私有的构造函数
-  FactoryClass._init();
-
-  //工厂构造函数
-  factory FactoryClass() => _instance;
-}
-
 //继承
 class Student extends Person {
   study() {
