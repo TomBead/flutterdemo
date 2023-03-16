@@ -4,6 +4,7 @@
 
 import 'package:flutterdemo/Widgets/Layout/center.dart';
 import 'package:flutterdemo/Widgets/Layout/padding.dart';
+import 'package:flutterdemo/Widgets/other/HttpDemo.dart';
 
 import 'Widgets/BaseWidget/GridView.dart';
 import 'Widgets/Layout/Align.dart';
@@ -231,6 +232,7 @@ class FMRouteManager {
       "/other/willpop": (BuildContext context) => WillPopScopeTestRoute(),
       "/other/ThemeTestRoute": (BuildContext context) => ThemeTestRoute(),
       "/other/file": (BuildContext context) => FileDemo(),
+      "/other/http": (BuildContext context) => HttpDemo(),
     };
   }
 }

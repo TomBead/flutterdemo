@@ -10,6 +10,7 @@ class SingletonClass {
   SingletonClass._init();
 
   //工厂构造函数
+  //factory 关键字，获取已经存在的对像
   factory SingletonClass() => _instance;
 
   void doWork() {

@@ -37,6 +37,11 @@ environment:
 # versions available, run `flutter pub outdated`.
 #项目的依赖插件库
 #Flutter插件库在这里查找引用：https://pub.dartlang.org/flutter
+
+
+#dependencies和dev_dependencies下包含应用程序所依赖的包，dependencies下的所有依赖会编译到项目中,
+#而dev_dependencies仅仅是运行期间的包，比如自动生成代码的库。
+
 dependencies:
   flutter:
     sdk: flutter
@@ -47,6 +52,15 @@ dependencies:
   #我们可以在这里引入插件库
   cupertino_icons: ^1.0.2
 
+  flutter_lints: ^2.0.0
+  transparent_image: ^2.0.0
+  fluttertoast: ^8.2.1
+  cached_network_image: ^3.2.3
+  path_provider: ^2.0.11
+  #网络请求
+  dio: ^5.0.2
+  json_annotation: ^4.5.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -56,11 +70,8 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^2.0.0
-  transparent_image: ^2.0.0
-  fluttertoast: ^8.2.1
-  cached_network_image: ^3.2.3
-  path_provider: ^2.0.11
+  json_serializable: ^6.2.0
+  build_runner: ^2.1.11
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
