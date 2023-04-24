@@ -13,6 +13,8 @@ import 'dartSample/FactoryClass.dart';
 import 'dartSample/SingletonClass.dart';
 import 'dartSample/StaticClass.dart';
 
+import 'package:pluginsample/FlutterPluginVersion.dart';
+
 //启动入口,
 void main() {
   runApp(MyApp());
@@ -135,6 +137,14 @@ class FMHomeState extends State<FMHomeVC> {
   void initState() {
     super.initState();
 
+    FlutterPluginVersion.platformVersion.then((value){
+     var version=value;
+      print(version);
+    });
+
+    FlutterPluginVersion.getDeviceBrand().then((value){
+      print("==================brand$value");
+    });
     initData();
   }
 

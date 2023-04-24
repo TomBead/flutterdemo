@@ -5,6 +5,7 @@
 import 'package:flutterdemo/Widgets/Layout/center.dart';
 import 'package:flutterdemo/Widgets/Layout/padding.dart';
 import 'package:flutterdemo/Widgets/other/HttpDemo.dart';
+import 'package:flutterdemo/Widgets/other/WxShear.dart';
 
 import 'Widgets/BaseWidget/GridView.dart';
 import 'Widgets/Layout/Align.dart';
@@ -233,6 +234,7 @@ class FMRouteManager {
       "/other/ThemeTestRoute": (BuildContext context) => ThemeTestRoute(),
       "/other/file": (BuildContext context) => FileDemo(),
       "/other/http": (BuildContext context) => HttpDemo(),
+      "/other/wxshear": (BuildContext context) => WxShear(),
     };
   }
 }

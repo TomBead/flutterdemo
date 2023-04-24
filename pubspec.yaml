@@ -60,6 +60,11 @@ dependencies:
   #网络请求
   dio: ^5.0.2
   json_annotation: ^4.5.0
+  #微信分享支付
+  fluwx: ^3.13.1
+  #创建本地
+  pluginsample:
+    path: ../pluginSample
 
 dev_dependencies:
   flutter_test:

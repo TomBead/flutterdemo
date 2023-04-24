@@ -24,6 +24,10 @@ class OtherFunListState extends State<OtherFunList> {
 
     funcLists.add({"name": "文件操作", "action": "/other/file", "desc": "文件操作 "});
     funcLists.add({"name": "网络请求", "action": "/other/http", "desc": "网络请求 "});
+    //还不行
+    funcLists.add({"name": "调用Android原生代码", "action": "/other/android", "desc": "调用Android原生代码 "});
+    //微信分享
+    funcLists.add({"name": "微信分享", "action": "/other/wxshear", "desc": "微信分享 "});
 
     //不起作用？
     // funcLists.add({"name": "导航栏拦截", "action": "/other/willpop", "desc": "按两次返回键退出"});
